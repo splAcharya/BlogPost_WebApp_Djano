@@ -50,6 +50,7 @@
   <ItemGroup>
     <Content Include="blog\templates\blog\home.html" />
     <Content Include="blog\templates\blog\index.html" />
+    <Content Include="blog\templates\blog\blog.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>

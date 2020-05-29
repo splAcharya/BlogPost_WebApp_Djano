@@ -11,4 +11,11 @@
 
 </body>
     <h1> The Blog Home !</h1>
+    <br />
+    <hr />
+    <br />
+    {% for post in posts %}
+        <h2>{{post.title}}</h2> 
+        <p>{{post.author}} </p>
+    {% endfor %}
 </html>
