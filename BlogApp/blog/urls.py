@@ -25,5 +25,5 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
     path("",views.home,name="blog-home"),
     path("home/",views.home,name="blog-home"),
-    path("index/",views.index,name="blog-index"),
+    path("about/",views.about,name="blog-about"),
 ]
