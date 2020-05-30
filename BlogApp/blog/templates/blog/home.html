@@ -1,19 +1,7 @@
-﻿<!DOCTYPE html>
+﻿{% extends "blog/base.html" %}
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+{% block content %}
 
-<head>
-    <meta charset="utf-8" />
-    {% if title %}
-        <title> Blog - {{title}} </title>
-    {% else %}
-        <title> Blog </title>
-    {% endif %}
-</head>
-
-<body>
-
-</body>
     <h1> The Blog Home !</h1>
     <br />
     <hr />
@@ -23,4 +11,5 @@
         <p>By {{post.author}} on {{post.date_posted}} </p>
         <p>{{post.content}}</p>
     {% endfor %}
-</html>
+
+{% endblock content %}
