@@ -24,14 +24,14 @@ posts = [
 
 
 def index(request):
-    context = {
-            "posts": posts
-        }
-    return render(request,"blog/index.html",context)
+    return render(request,"blog/index.html")
 
 
 
 def home(request):
-    return render(request,"blog/home.html")
+    context = {
+            "posts": posts
+        }
+    return render(request,"blog/home.html",context)
 
 
