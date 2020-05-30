@@ -4,7 +4,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    {% if title %}
+        <title> Blog - {{title}} </title>
+    {% else %}
+        <title> Blog </title>
+    {% endif %}
 </head>
 
 <body>

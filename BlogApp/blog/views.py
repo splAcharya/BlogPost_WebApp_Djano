@@ -30,6 +30,7 @@ def index(request):
 
 def home(request):
     context = {
+            "title": "Home",
             "posts": posts
         }
     return render(request,"blog/home.html",context)
