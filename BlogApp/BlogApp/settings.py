@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog.apps.blogConfig',
     "users.apps.usersConfig",
+    "crispy_forms",
 ]
 
 # Middleware framework
@@ -112,4 +113,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_URL = '/static/'
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+

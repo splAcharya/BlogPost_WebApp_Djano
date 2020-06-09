@@ -15,8 +15,8 @@ def register(request):
             username = form.cleaned_data.get("username")
             messages.success(request,f"Account created for {username}!")
             return redirect("blog-home")
-
-    form = UserRegisterForm()
+    else:
+        form = UserRegisterForm()
     context = {"title":"Registration","form":form}
     return render(request,"users/register.html",context)
 
