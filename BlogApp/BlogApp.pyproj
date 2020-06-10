@@ -67,6 +67,8 @@
     <Content Include="blog\templates\blog\base.html" />
     <Content Include="blog\templates\blog\home.html" />
     <Content Include="requirements.txt" />
+    <Content Include="users\templates\users\login.html" />
+    <Content Include="users\templates\users\logout.html" />
     <Content Include="users\templates\users\register.html" />
   </ItemGroup>
   <ItemGroup>
