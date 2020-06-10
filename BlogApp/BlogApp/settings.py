@@ -119,3 +119,6 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 #django auth redirect
 LOGIN_REDIRECT_URL = "blog-home"
+
+#djano redirect login
+LOGIN_URL = "login"

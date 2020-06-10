@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from .forms import UserRegisterForm
+from django.contrib.auth.decorators import login_required
 #from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
@@ -26,26 +27,9 @@ def register(request):
 #message.warning
 #message.error
 
-
-#def logInUser(request):
-#    username = request.POST["username"]
-#    password = request.POST["password"]
-#    user = authenticate(request,username=username,password=password)
-#    if user is not None:
-#        login(request,user)
-#        messages.sucess(request,f"You are now logged In")
-#        redirect("blog-home")
-#    else:
-#        messages.error(request,f"PLease try agian")
-#        context = {}
-
-
-
-
-
-#def logoutUser(request):
-#    logout(request)
-#    return render(request,"blog/home.html",{"title":"Blog Home"})
+@login_required
+def profile(request):
+    return render(request,"users/profile.html")
 
 
 
