@@ -113,6 +113,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR,"media") #no matter file system or os, a folder called media will be created
+MEDIA_URL = "/media/"
+
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
