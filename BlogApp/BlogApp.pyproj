@@ -70,8 +70,6 @@
     <Content Include="blog\templates\blog\about.html" />
     <Content Include="blog\templates\blog\base.html" />
     <Content Include="blog\templates\blog\home.html" />
-    <Content Include="media\default.jpg" />
-    <Content Include="media\profile_pics\22449-dark-crow-artwork-smoke.jpg" />
     <Content Include="requirements.txt" />
     <Content Include="users\templates\users\login.html" />
     <Content Include="users\templates\users\logout.html" />
@@ -86,8 +84,6 @@
     <Folder Include="blog\static\blog\" />
     <Folder Include="blog\templates\" />
     <Folder Include="blog\templates\blog\" />
-    <Folder Include="media\" />
-    <Folder Include="media\profile_pics\" />
     <Folder Include="users\" />
     <Folder Include="users\migrations\" />
     <Folder Include="users\templates\" />
