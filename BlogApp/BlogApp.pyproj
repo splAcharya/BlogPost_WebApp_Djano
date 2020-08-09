@@ -70,6 +70,9 @@
     <Content Include="blog\templates\blog\about.html" />
     <Content Include="blog\templates\blog\base.html" />
     <Content Include="blog\templates\blog\home.html" />
+    <Content Include="blog\templates\blog\post_confirm_delete.html" />
+    <Content Include="blog\templates\blog\post_detail.html" />
+    <Content Include="blog\templates\blog\post_form.html" />
     <Content Include="requirements.txt" />
     <Content Include="users\templates\users\login.html" />
     <Content Include="users\templates\users\logout.html" />
